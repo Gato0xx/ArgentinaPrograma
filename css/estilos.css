@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Teko', sans-serif;
+}
+
+.logoap{
+    position: fixed;
+    display: inline-block;
+    background-color: rgb(12, 12, 95);
+    border-style: none;
+    padding: 0%;
+    width: 10%;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: url(../img/unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.menu1{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #7a2929 0%, #000000 100%);
+    background-image: linear-gradient(135deg, #611f1f 0%, #242028 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.782);
+}
+.spread{
+    transform: translateX(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.titulo{
+    font-size: 90px;
+    margin-bottom: 15px;
+}
+
+.copia{
+    font-size: 70px;
+    font-weight: 300;
+    justify-content: space-between;
+
+}
+
+/*  */
+
+.subtitulo{
+    color: #660d0d;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+/* footer*/
+
+footer{
+    background: #3b393b;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.linea{
+    width: 35%;
+    max-width: 1200px;
+    margin: auto;
+    height: 4px;
+    background: rgb(49, 47, 47);
+    margin-bottom: 60px;
+}
+
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#660d0d;
+}
+
+/* tamanios de pantalla*/
+
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+/*Acerca de*/
+
+    .contenedor-acerca-de img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+    .checklist-acerca-de{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .row{
+        padding: auto;
+        margin: auto;
+        background-color: #00000014;
+        border: 1px solid rgba(0, 0, 0, 0.63);
+    }
+/*Experiencia*/
+    
+    .cont-expert{
+        width: 80%;
+    }
+    
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .menu1{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+    
+    .agregar-imagen{
+        width: 90%;
+    }
+
+    .social-media{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    
+}
