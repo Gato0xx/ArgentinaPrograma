@@ -10,6 +10,8 @@ box-sizing: border-box;
 
 body{
     font-family: 'Teko', sans-serif;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23484848' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .logoap{
@@ -22,11 +24,12 @@ body{
 }
 
 .contenedor{
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
+    text-align: center;
 }
 
 .header{
@@ -47,6 +50,33 @@ body{
     text-align: center;
     color: #fff;
 }
+
+.login {
+    color: #fff;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  max-width:400px;
+	width: 80%;
+  line-height:3em;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+
+.login-form input[type="button"] {
+    height:30px;
+    width:100px;
+    background:#fff;
+    border:1px solid #f2f2f2;
+    border-radius:20px;
+    color: slategrey;
+    text-transform:uppercase;
+    cursor:pointer;
+  }
 
 .menu1{
     position: fixed;
@@ -93,9 +123,6 @@ body{
 
 .copia{
     font-size: 70px;
-    font-weight: 300;
-    justify-content: space-between;
-
 }
 
 /*  */
@@ -104,7 +131,7 @@ body{
     color: #660d0d;
     font-size: 70px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 /* footer*/
@@ -175,13 +202,24 @@ footer{
     margin-bottom: 60px;
 }
 
-
 .social-media-icon:hover{
     background: #fff;
     color:#660d0d;
 }
 
-/* tamanios de pantalla*/
+/* Acerca de*/
+
+
+
+
+.service p{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+/* tamaños de pantalla*/
 
 @media screen and (max-width: 800px){
     .menu-navegacion{
@@ -191,20 +229,6 @@ footer{
     .titulo{
         font-size: 40px;
     }
-/*Acerca de*/
-
-    .contenedor-acerca-de img{
-        width: 80%;
-        margin-bottom: 40px;
-    }
-    
-    .checklist-acerca-de{
-        width: 80%;
-    }
-
-    .service{
-        margin-bottom: 30px;
-    }
 
     .row{
         padding: auto;
@@ -212,11 +236,8 @@ footer{
         background-color: #00000014;
         border: 1px solid rgba(0, 0, 0, 0.63);
     }
-/*Experiencia*/
     
-    .cont-expert{
-        width: 80%;
-    }
+    
     
     .footer-content{
         justify-content: center;
@@ -258,13 +279,6 @@ footer{
         font-size: 30px;
     }
 
-    .img-galeria{
-        width: 95%;
-    }
-    
-    .agregar-imagen{
-        width: 90%;
-    }
 
     .social-media{
         width: 100%;
@@ -282,3 +296,101 @@ footer{
     }
     
 }
+
+/*body {
+  background:url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
+  margin:0px;
+  font-family: 'Ubuntu', sans-serif;
+	background-size: 100% 110%;
+}
+h1, h2, h3, h4, h5, h6, a {
+  margin:0; padding:0;
+}
+.login {
+  margin:0 auto;
+  max-width:500px;
+}
+.login-header {
+  color:#fff;
+  text-align:center;
+  font-size:300%;
+}*/
+/* .login-header h1 {
+   text-shadow: 0px 5px 15px #000; */
+
+/*
+}
+.login-form {
+  border:.5px solid #fff;
+  background:#4facff;
+  border-radius:10px;
+  box-shadow:0px 0px 10px #000;
+}
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+	padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  max-width:400px;
+	width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+.login-form input[type="button"] {
+  height:30px;
+  width:100px;
+  background:#fff;
+  border:1px solid #f2f2f2;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+}
+.sign-up{
+  color:#f2f2f2;
+  margin-left:-70%;
+  cursor:pointer;
+  text-decoration:underline;
+}
+.no-access {
+  color:#E86850;
+  margin:20px 0px 20px -57%;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.try-again {
+  color:#f2f2f2;
+  text-decoration:underline;
+  cursor:pointer;
+}
+*/
+/*Media Querie*/
+/*
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  .login-button {
+    margin-bottom:10px;
+  }
+}
+*/
