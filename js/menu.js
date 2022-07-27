@@ -14,13 +14,3 @@ window.addEventListener('click', e =>{
     }
 })
 
-// ANIMATE PROGRESS BAR FILL
-
-$(".meter > span").each(function() {
-	$(this)
-		.data("origWidth", $(this).width())
-		.width(0)
-		.animate({
-			width: $(this).data("origWidth")
-		}, 1200);
-});
