@@ -19,30 +19,28 @@
     <header class="header" id="inicio">
     <!-- logo Argentina Programa   -->
             <img src="img/APLogo-20-20.png" alt="Argentina Programa" class="logoap">
+
+                            <!--lOGIN-->
+    
+    <div class="login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Usuario">
+        </div>
+      
+        <div class="textbox">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Contraseña">
+        </div>
+      
+        <input type="button" class="btn" value="Ingresar">
+    </div>
+
     <!--Menu de navegacion-->
+
             <img src="img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="hamburguer" class="menu1">
     <nav class="menu-navegacion">
-        <!--lOGIN-->
-        <div class="login">
-            <div class="login-header">
-              <p>Login</p>
-            </div>
-            <div class="login-form">
-              <p>Username:</p>
-              <input type="text" placeholder="Username"/><br>
-              <p>Password:</p>
-              <input type="password" placeholder="Password"/>
-              <br>
-              <input type="button" value="Login" class="login-button"/>
-              <br>
-              <a class="sign-up">Cuenta</a>
-              <br>
-              <h6 class="no-access">Can't access your account?</h6>
-            </div>
-          </div>
-          <div class="error-page">
-            <div class="try-again">Error: Try again?</div>
-          </div>
             <a href="#inicio">Inicio</a>
             <a href="#acerca-de">Sobre mí</a>
             <a href="#experiencia">Experiencia</a>
@@ -101,31 +99,62 @@
         <h2 class="subtitulo">Skills</h2>
         <div class="linea"></div>
             <div class="contenedor habilidades-content">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col">Columna1</div>
-                    <div class="col">Columna1</div>
-                </div>
-                </div>
+
+            <h2 class="front-habilidades">Front End</h2>
+            
                 <div class="container">
-                    <div class="row">
-                    <div class="col">Columna1</div>
-                    <div class="col">Columna1</div>
+                    <div class="card">
+                      <div class="box">
+                        <div class="percent">
+                          <svg>
+                            <circle id="bar1" cx="70" cy="70" r="70"></circle>
+                            <circle id="bar2" cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2>35<span>%</span></h2>
+                          </div>
+                        </div>
+                        <h2 class="text">Html</h2>
+                      </div>
                     </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                    <div class="col">Columna1</div>
-                    <div class="col">Columna1</div>
-                </div>
-                </div>
+                    <div class="card">
+                      <div class="box">
+                        <div class="percent">
+                          <svg>
+                            <circle id="bar1" cx="70" cy="70" r="70"></circle>
+                            <circle id="bar2" cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2>30<span>%</span></h2>
+                          </div>
+                        </div>
+                        <h2 class="text">CSS</h2>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="box">
+                        <div class="percent">
+                          <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2>20<span>%</span></h2>
+                          </div>
+                        </div>
+                        <h2 class="text">Java Script</h2>
+                      </div>
+                    </div>
+                  </div>
             </div>
+
 
     </section>
     <section class="proyectos" id="portfolio">
         <h2 class="subtitulo">Proyectos</h2>
         <div class="linea"></div>
             <div class="contenedor proyectos-content">
+
                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ducimus exercitationem totam iste rerum recusandae voluptas iure rem eaque amet magni dignissimos obcaecati, saepe aut facilis eveniet. Quidem, corrupti repellendus.</p>
             </div>
 
@@ -151,6 +180,7 @@
                 </div>
         </div>
         <div class="line"></div>
+        <div class="anio"><p>2022</p></div>
 </footer>
     
     <script src="js/menu.js"></script>

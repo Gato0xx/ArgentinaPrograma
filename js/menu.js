@@ -14,15 +14,13 @@ window.addEventListener('click', e =>{
     }
 })
 
+// ANIMATE PROGRESS BAR FILL
 
-$('.error-page').hide(0);
-
-$('.login-button , .no-access').click(function(){
-  $('.login').slideUp(500);
-  $('.error-page').slideDown(1000);
+$(".meter > span").each(function() {
+	$(this)
+		.data("origWidth", $(this).width())
+		.width(0)
+		.animate({
+			width: $(this).data("origWidth")
+		}, 1200);
 });
-
-$('.try-again').click(function(){
-  $('.error-page').hide(0);
-  $('.login').slideDown(1000);
-}); 
