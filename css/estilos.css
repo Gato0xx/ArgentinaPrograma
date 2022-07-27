@@ -254,7 +254,19 @@ svg circle:nth-child(2) {
 }
 .card:nth-child(3) svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 20)/ 100);
-  stroke: #bdd80c;
+  stroke: #bdd80c;git ini
+}
+.card:nth-child(5) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60)/ 100);
+  stroke: #ffa200;
+}
+.card:nth-child(6) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 100)/ 100);
+  stroke: #00a1ff;
+}
+.card:nth-child(7) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 5)/ 100);
+  stroke: #50552d;
 }
 .box .percent .number {
   position: absolute;
