@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
 
@@ -20,22 +21,39 @@
     <!-- logo Argentina Programa   -->
             <img src="img/APLogo-20-20.png" alt="Argentina Programa" class="logoap">
 
-                            <!--lOGIN-->
+            <!--Prueba Loguin-->
+
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Toggle width collapse
+              </button>
+            </p>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 300px;">
+                  <!--lOGIN-->
     
     <div class="login-box">
-        <h1>Login</h1>
-        <div class="textbox">
-          <i class="fas fa-user"></i>
-          <input type="text" placeholder="Usuario">
-        </div>
-      
-        <div class="textbox">
-          <i class="fas fa-lock"></i>
-          <input type="password" placeholder="Contraseña">
-        </div>
-      
-        <input type="button" class="btn" value="Ingresar">
-    </div>
+      <h1>Login</h1>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Usuario">
+      </div>
+    
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Contraseña">
+      </div>
+    
+      <input type="button" class="btn" value="Ingresar">
+  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+                            
 
     <!--Menu de navegacion-->
 
@@ -100,100 +118,48 @@
         <div class="linea"></div>
           <div class="contenedor habilidades-content">
 
-            <h2 class="front-habilidades">Front End</h2>
+            <div class="skillbar clearfix " data-percent="40%">
+              <div class="skillbar-title" style="background: #f95700;"><span>HTML</span></div>
+              <div class="skillbar-bar" style="background: #ffab2c;"></div>
+              <div class="skill-bar-percent">40%</div>
+            </div> <!-- End Skill Bar -->
             
-                <div class="container">
-                    <div class="card">
-                      <div class="box">
-                        <div class="percent">
-                          <svg>
-                            <circle id="bar1" cx="70" cy="70" r="70"></circle>
-                            <circle id="bar2" cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                            <h2>35<span>%</span></h2>
-                          </div>
-                        </div>
-                        <h2 class="text">Html</h2>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="box">
-                        <div class="percent">
-                          <svg>
-                            <circle id="bar1" cx="70" cy="70" r="70"></circle>
-                            <circle id="bar2" cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                            <h2>30<span>%</span></h2>
-                          </div>
-                        </div>
-                        <h2 class="text">CSS</h2>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="box">
-                        <div class="percent">
-                          <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                            <h2>20<span>%</span></h2>
-                          </div>
-                        </div>
-                        <h2 class="text">Java Script</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h2 class="front-habilidades-back">Back End</h2>
+            <div class="skillbar clearfix " data-percent="35%">
+              <div class="skillbar-title" style="background: #0202a5;"><span>CSS</span></div>
+              <div class="skillbar-bar" style="background: #426df8;"></div>
+              <div class="skill-bar-percent">35%</div>
+            </div> <!-- End Skill Bar -->
             
-                <div class="container">
-                    <div class="card">
-                      <div class="box">
-                        <div class="percent">
-                          <svg>
-                            <circle id="bar1" cx="70" cy="70" r="70"></circle>
-                            <circle id="bar2" cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                            <h2>35<span>%</span></h2>
-                          </div>
-                        </div>
-                        <h2 class="text">Html</h2>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="box">
-                        <div class="percent">
-                          <svg>
-                            <circle id="bar1" cx="70" cy="70" r="70"></circle>
-                            <circle id="bar2" cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                            <h2>30<span>%</span></h2>
-                          </div>
-                        </div>
-                        <h2 class="text">CSS</h2>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="box">
-                        <div class="percent">
-                          <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle cx="70" cy="70" r="70"></circle>
-                          </svg>
-                          <div class="number">
-                            <h2>20<span>%</span></h2>
-                          </div>
-                        </div>
-                        <h2 class="text">Java Script</h2>
-                      </div>
-                    </div>
-                  </div>
-
+            <div class="skillbar clearfix " data-percent="20%">
+              <div class="skillbar-title" style="background: #ffff17;"><span>Java Script</span></div>
+              <div class="skillbar-bar" style="background: #f7f761;"></div>
+              <div class="skill-bar-percent">20%</div>
+            </div> <!-- End Skill Bar -->
+            
+            <div class="skillbar clearfix " data-percent="40%">
+              <div class="skillbar-title" style="background: #46465e;"><span>Muse</span></div>
+              <div class="skillbar-bar" style="background: #5a68a5;"></div>
+              <div class="skill-bar-percent">40%</div>
+            </div> <!-- End Skill Bar -->
+            
+            <div class="skillbar clearfix " data-percent="75%">
+              <div class="skillbar-title" style="background: #333333;"><span>InDesign</span></div>
+              <div class="skillbar-bar" style="background: #525252;"></div>
+              <div class="skill-bar-percent">75%</div>
+            </div> <!-- End Skill Bar -->
+            
+            <div class="skillbar clearfix " data-percent="100%">
+              <div class="skillbar-title" style="background: #27ae60;"><span>Fireworks</span></div>
+              <div class="skillbar-bar" style="background: #2ecc71;"></div>
+              <div class="skill-bar-percent">100%</div>
+            </div> <!-- End Skill Bar -->
+            
+            <div class="skillbar clearfix " data-percent="50%">
+              <div class="skillbar-title" style="background: #124e8c;"><span>Inglés</span></div>
+              <div class="skillbar-bar" style="background: #4288d0;"></div>
+              <div class="skill-bar-percent">50%</div>
+            </div> <!-- End Skill Bar -->
+            
         </div>
 
 
@@ -233,6 +199,7 @@
     
     <script src="js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script src="js/skills.js"></script>
+    
 </body>
 </html>
